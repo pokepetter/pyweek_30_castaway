@@ -9,7 +9,7 @@ app = Ursina()
 
 # t = time.time()
 level = load_blender_scene('castaway_island',
-    reload=True
+    # reload=True
     )
 # print('reload_total:', time.time() - t)
 t = time.time()
@@ -18,7 +18,7 @@ level.mesh_collider.visible = False
 
 level.water.color = color.color(160,1,.8,.5)
 level.water.enabled = False
-Entity(model='plane', position=level.water.position, scale=9999, color=color.color(160,1,.8,.5))
+Entity(model='plane', position=level.water.position, scale=9999, color=color.color(160,1,.8,.5), double_sided=True)
 scene.fog_color = color.color(6, .1, .85)
 
 
@@ -37,6 +37,7 @@ level.gate_pattern.world_parent = level.gate
 level.gate_pattern_001.world_parent = level.gate_001
 
 level.eye_trigger.collider = 'box'
+level.goat.collider = 'mesh'
 
 
 
