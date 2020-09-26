@@ -85,22 +85,27 @@ def input(key):
     elif key == 'shift up':
         player.speed = player.original_speed
 
+    if level.bow.enabled and key == 'left mouse down':
+        player.arrow = duplicate(level.arrow, world_parent=level.bow, position=Vec3(-.2,0,0), rotation=Vec3(0,0,0))
+        player.arrow.animate('z', -2, duration=.2, curve=curve.linear)
 
     if level.bow.enabled and key == 'left mouse up':
-        arrow =  duplicate(level.arrow, position=level.bow.world_position, rotation=level.bow.world_rotation)
         if mouse.hovered_entity:
             # print('hit something', mouse.hovered_entity)
-            arrow.animate('world_position', Vec3(*mouse.world_point), mouse.collision.distance/1000, curve=curve.linear)
+            player.arrow.world_parent = scene
+            player.arrow.z_animator.finish()
+            player.arrow.animate('world_position', Vec3(*mouse.world_point), mouse.collision.distance/500, curve=curve.linear)
 
             if mouse.hovered_entity == level.eye_trigger:
                 invoke(open_gate, delay=.3)
-                destroy(arrow, delay=.1)
+                destroy(player.arrow, delay=.1)
                 return
 
-            destroy(arrow, delay=10)
+            destroy(player.arrow, delay=10)
+
         else:
-            arrow.animate('world_position', arrow.world_position+(arrow.forward*100), 1, curve=curve.linear)
-            destroy(arrow, delay=1)
+            player.arrow.animate('world_position', player.arrow.world_position+(player.arrow.forward*100), 1, curve=curve.linear)
+            destroy(player.arrow, delay=1)
 
     # cheat buttons
     if key == 'f1':
