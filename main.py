@@ -2,7 +2,7 @@ from ursina import *
 from ursina.shaders import colored_lights_shader
 
 # window.vsync = False
-if application.development_mode:
+if not application.development_mode:
     window.show_ursina_splash = True
 app = Ursina()
 
