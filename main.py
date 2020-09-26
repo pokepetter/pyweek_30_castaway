@@ -1,15 +1,15 @@
 from ursina import *
-from ursina.shaders import basic_lighting_shader
-from ursina.shaders import matcap_shader
 from ursina.shaders import colored_lights_shader
 
-window.vsync = False
+# window.vsync = False
+if application.development_mode:
+    window.show_ursina_splash = True
 app = Ursina()
 
 
 # t = time.time()
 level = load_blender_scene('castaway_island',
-    # reload=True
+    reload=True
     )
 # print('reload_total:', time.time() - t)
 t = time.time()
@@ -93,7 +93,8 @@ def input(key):
         if mouse.hovered_entity:
             # print('hit something', mouse.hovered_entity)
             player.arrow.world_parent = scene
-            player.arrow.z_animator.finish()
+            if hasattr(e, 'z_animator'):
+                player.arrow.z_animator.finish()
             player.arrow.animate('world_position', Vec3(*mouse.world_point), mouse.collision.distance/500, curve=curve.linear)
 
             if mouse.hovered_entity == level.eye_trigger:
