@@ -9,7 +9,7 @@ How to run on Linux by running the non-packaged version:
 Requires Python 3.7 or higher and ursina.
 
 1) Install the most recent version of ursina with "pip install https://github.com/pokepetter/ursina/archive/master.zip"
-2) Clone or download the game's repo with "git clone https://github.com/pokepetter/pyweek_28_castaway.git --depth=1"
+2) Clone or download the game's repo with "git clone https://github.com/pokepetter/pyweek_30_castaway.git --depth=1"
 3) Move into the game's directory and run main.py with "python main.py"
 
 
