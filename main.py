@@ -94,9 +94,7 @@ def input(key):
         if mouse.hovered_entity:
             # print('hit something', mouse.hovered_entity)
             player.arrow.world_parent = scene
-            if hasattr(e, 'z_animator'):
-                player.arrow.z_animator.finish()
-            player.arrow.animate('world_position', Vec3(*mouse.world_point), mouse.collision.distance/500, curve=curve.linear)
+            player.arrow.animate('world_position', Vec3(*mouse.world_point), mouse.collision.distance/500, curve=curve.linear, interrupt='finish')
 
             if mouse.hovered_entity == level.eye_trigger:
                 invoke(open_gate, delay=.3)
@@ -106,7 +104,7 @@ def input(key):
             destroy(player.arrow, delay=10)
 
         else:
-            player.arrow.animate('world_position', player.arrow.world_position+(player.arrow.forward*100), 1, curve=curve.linear)
+            player.arrow.animate('world_position', player.arrow.world_position+(player.arrow.forward*100), .5, curve=curve.linear, interrupt='finish')
             destroy(player.arrow, delay=1)
 
     # cheat buttons
