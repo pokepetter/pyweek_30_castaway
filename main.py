@@ -6,8 +6,6 @@ if not application.development_mode:
     window.show_ursina_splash = True
 app = Ursina()
 
-
-# t = time.time()
 level = load_blender_scene('castaway_island',
     # reload=True
     )
@@ -88,13 +86,15 @@ def input(key):
 
     if level.bow.enabled and key == 'left mouse down':
         player.arrow = duplicate(level.arrow, world_parent=level.bow, position=Vec3(-.2,0,0), rotation=Vec3(0,0,0))
-        player.arrow.animate('z', -2, duration=.2, curve=curve.linear)
+        player.arrow.animate('position', player.arrow.position+Vec3(0,0,-2), duration=.2, curve=curve.linear)
 
     if level.bow.enabled and key == 'left mouse up':
-        if mouse.hovered_entity:
+        if mouse.hovered_entity and mouse.hovered_entity.visible:
             # print('hit something', mouse.hovered_entity)
             player.arrow.world_parent = scene
-            player.arrow.animate('world_position', Vec3(*mouse.world_point), mouse.collision.distance/500, curve=curve.linear, interrupt='finish')
+            player.arrow.animate('position', Vec3(*mouse.world_point), mouse.collision.distance/500, curve=curve.linear, interrupt='kill')
+            # player.arrow.world_parent = scene
+            # player.arrow.animate('z', mouse.collision.distance, mouse.collision.distance/500, curve=curve.linear, interrupt='finish')
 
             if mouse.hovered_entity == level.eye_trigger:
                 invoke(open_gate, delay=.3)
@@ -104,7 +104,10 @@ def input(key):
             destroy(player.arrow, delay=10)
 
         else:
-            player.arrow.animate('world_position', player.arrow.world_position+(player.arrow.forward*100), .5, curve=curve.linear, interrupt='finish')
+            # player.draw_arrow_animation.kill()
+            player.arrow.world_parent = scene
+            player.arrow.animate('position', player.arrow.world_position+(player.arrow.forward*100), .5, curve=curve.linear, interrupt='kill')
+            # player.arrow.animate('z', 100, .5, curve=curve.linear, interrupt='finish')
             destroy(player.arrow, delay=1)
 
     # cheat buttons
@@ -139,5 +142,8 @@ def open_gate():
 
 Sky(texture='castaway_sky')
 # EditorCamera()
+if application.development_mode:
+    player.add_script(NoclipMode(speed=32))
+
 
 app.run()
