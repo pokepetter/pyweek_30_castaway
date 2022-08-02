@@ -57,7 +57,7 @@ for e in level.children:
 
     elif 'rock' in e.name:
         e.collider='box'
-        e.flip_faces()
+        e.flipped_faces = True
 
     elif e.name == 'ship':
         e.collider = 'mesh'
