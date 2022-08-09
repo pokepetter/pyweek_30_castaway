@@ -1,12 +1,16 @@
 from ursina import *
 from ursina.shaders import colored_lights_shader
+from ursina.shaders import ssao_shader
+
 
 # window.vsync = False
-if not application.development_mode:
-    window.show_ursina_splash = True
+# if not application.development_mode:
+window.show_ursina_splash = True
 app = Ursina()
-
-level = load_blender_scene('castaway_island',
+#
+# Entity.default_shader = colored_lights_shader
+level = load_blender_scene(path = application.asset_folder,
+    name='castaway_island',
     # reload=True
     )
 # print('reload_total:', time.time() - t)
@@ -57,13 +61,14 @@ for e in level.children:
 
     elif 'rock' in e.name:
         e.collider='box'
-        e.flip_faces()
+        e.flipped_faces = False
 
     elif e.name == 'ship':
         e.collider = 'mesh'
 
     elif 'tree' in e.name:
         e.collider = 'mesh'
+        print(type(e.model))
 
 def open_chest():
     if distance_xz(player.position, level.chest.position) < 6:
@@ -87,6 +92,7 @@ def input(key):
     if level.bow.enabled and key == 'left mouse down':
         player.arrow = duplicate(level.arrow, world_parent=level.bow, position=Vec3(-.2,0,0), rotation=Vec3(0,0,0))
         player.arrow.animate('position', player.arrow.position+Vec3(0,0,-2), duration=.2, curve=curve.linear)
+        player.arrow.shader = colored_lights_shader
 
     if level.bow.enabled and key == 'left mouse up':
         if mouse.hovered_entity and mouse.hovered_entity.visible:
@@ -117,6 +123,13 @@ def input(key):
     if key == 'f2':
         open_gate()
 
+    if key == 'f3':
+        if not camera.shader:
+            camera.shader = ssao_shader
+        else:
+            camera.shader = None
+
+
     if held_keys['control'] and key == 'r':
         player.position = level.start_point.position
 
@@ -139,11 +152,39 @@ def open_gate():
     level.gate.animate_position(level.gate.position+(level.gate.left)*10, duration=5, curve=curve.linear)
     level.gate_001.animate_position(level.gate_001.position+(level.gate_001.right)*10, duration=5, curve=curve.linear)
 
+# # Enable shadows; we need to set a frustum for that.
+# from ursina.lights import DirectionalLight
+# sun._light.get_lens().set_near_far(1, 30)
+# # sun.get_lens().set_film_size(20, 40)
+#
+# def debug_input(key):
+#     if key == 'space':
+#         set_shadow_area()
+# e = Entity(input=debug_input, sun=None)
 
-Sky(texture='castaway_sky')
+# def set_shadow_area():
+#     if not e.sun:
+#         e.sun = DirectionalLight(y=10, rotation=(90+40,90,0))
+#     e.sun._light.show_frustum()
+#     e.sun._light.set_shadow_caster(True, 4096, 4096)
+#     e.sun._light.show_frustum()
+#     # sun._light.set_shadow_caster(True, 4096, 4096)
+#     bmin, bmax = scene.get_tight_bounds(level)
+#     lens = e.sun._light.get_lens()
+#     lens.set_near_far(0, 100)
+#     # lens.set_film_offset((bmin.xy + bmax.xy) * .5)
+#     lens.set_film_size(50)
+#     print('updated shadow area')
 # EditorCamera()
 if application.development_mode:
+    from ursina.scripts.noclip_mode import NoclipMode
     player.add_script(NoclipMode(speed=32))
 
+# level.bow.model.save('bow.bam')
+# level.arrow.model.save('arrow.bam')
+# camera.clip_plane_near = 1
+camera.clip_plane_far = 500
+Sky(texture='castaway_sky', scale=camera.clip_plane_far-1)
+# camera.shader = ssao_shader
 
 app.run()
