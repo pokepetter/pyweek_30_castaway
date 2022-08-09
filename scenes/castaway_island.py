@@ -258,7 +258,7 @@ scene_parent.arrow = Entity(
     position=Vec3(121.99352, 39.867, 30.22504),
     rotation=(-0.0, -0.0, -0.0),
     scale=Vec3(0.02522, 0.02522, 1.03459),
-    model=deepcopy(meshes['arrow']),
+    model=copy(meshes['arrow']),
     ignore=True,
     )
 scene_parent.bow = Entity(
@@ -267,7 +267,7 @@ scene_parent.bow = Entity(
     position=Vec3(122.01482, 39.85505, 30.13897),
     rotation=(-0.0, -0.0, -0.0),
     scale=Vec3(0.24958, 0.31452, 0.31452),
-    model=deepcopy(meshes['Cube_029']),
+    model=copy(meshes['Cube_029']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -277,7 +277,7 @@ scene_parent.box_collider = Entity(
     position=Vec3(35.55663, 1.41142, -60.06475),
     rotation=(-0.0, -2.27823, -0.0),
     scale=Vec3(73.4954, 11.17833, 11.17833),
-    model=deepcopy(meshes['Cube_008']),
+    model=copy(meshes['Cube_008']),
     ignore=True,
     )
 scene_parent.box_collider_001 = Entity(
@@ -286,7 +286,7 @@ scene_parent.box_collider_001 = Entity(
     position=Vec3(-70.03593, 1.41142, -78.94229),
     rotation=(-0.0, -24.16927, -0.0),
     scale=Vec3(39.49842, 11.17833, 11.17833),
-    model=deepcopy(meshes['Cube_008']),
+    model=copy(meshes['Cube_008']),
     ignore=True,
     )
 scene_parent.box_collider_002 = Entity(
@@ -295,7 +295,7 @@ scene_parent.box_collider_002 = Entity(
     position=Vec3(133.11227, 53.21381, 103.55762),
     rotation=(-0.0, -79.16927, -0.0),
     scale=Vec3(24.39935, 29.87664, 11.17833),
-    model=deepcopy(meshes['Cube_008']),
+    model=copy(meshes['Cube_008']),
     ignore=True,
     )
 scene_parent.chest = Entity(
@@ -304,7 +304,7 @@ scene_parent.chest = Entity(
     position=Vec3(17.89741, 20.64074, 99.0032),
     rotation=(-0.0, 125.24124, -0.0),
     scale=Vec3(0.88328, 0.88328, 0.88328),
-    model=deepcopy(meshes['Cube']),
+    model=copy(meshes['Cube']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -314,7 +314,7 @@ scene_parent.chest_lid = Entity(
     position=Vec3(18.53119, 21.99424, 98.53445),
     rotation=(-0.0, 125.24124, -0.0),
     scale=Vec3(0.88328, 0.88328, 0.88328),
-    model=deepcopy(meshes['Cube_002']),
+    model=copy(meshes['Cube_002']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -324,7 +324,7 @@ scene_parent.Cube = Entity(
     position=Vec3(299.80286, 23.32402, -111.22037),
     rotation=(25.95104, 0.60163, 0.92858),
     scale=Vec3(1.11538, 1.00007, 1.0001),
-    model=deepcopy(meshes['Cube_028']),
+    model=copy(meshes['Cube_028']),
     ignore=True,
     )
 scene_parent.Cube_003 = Entity(
@@ -333,7 +333,7 @@ scene_parent.Cube_003 = Entity(
     position=Vec3(-41.64867, 0.0, 271.89127),
     rotation=(-0.0, 90.0, -0.0),
     scale=Vec3(1.0, 1.0, 1.0),
-    model=deepcopy(meshes['Cube_021']),
+    model=copy(meshes['Cube_021']),
     color=(0.23955, 0.11983, 0.03665, 1.0),
     ignore=True,
     )
@@ -343,7 +343,7 @@ scene_parent.Cube_004 = Entity(
     position=Vec3(-41.64867, 0.0, 271.89127),
     rotation=(-0.0, 90.0, -0.0),
     scale=Vec3(1.0, 1.0, 1.0),
-    model=deepcopy(meshes['Cube_023']),
+    model=copy(meshes['Cube_023']),
     color=(0.23955, 0.11983, 0.03665, 1.0),
     ignore=True,
     )
@@ -353,7 +353,7 @@ scene_parent.Cube_005 = Entity(
     position=Vec3(-41.64867, 0.0, 271.89127),
     rotation=(-0.0, 90.0, -0.0),
     scale=Vec3(1.0, 1.0, 1.0),
-    model=deepcopy(meshes['Cube_024']),
+    model=copy(meshes['Cube_024']),
     color=(0.23955, 0.11983, 0.03665, 1.0),
     ignore=True,
     )
@@ -363,7 +363,7 @@ scene_parent.Cube_006 = Entity(
     position=Vec3(-41.64867, 0.0, 271.89127),
     rotation=(-0.0, 90.0, -0.0),
     scale=Vec3(1.0, 1.0, 1.0),
-    model=deepcopy(meshes['Cube_025']),
+    model=copy(meshes['Cube_025']),
     color=(0.23955, 0.11983, 0.03665, 1.0),
     ignore=True,
     )
@@ -373,7 +373,7 @@ scene_parent.Cylinder = Entity(
     position=Vec3(299.13434, 2.7898, -107.90195),
     rotation=(-0.0, -0.0, -0.0),
     scale=Vec3(1.0, 1.0, 1.0),
-    model=deepcopy(meshes['Cylinder_001']),
+    model=copy(meshes['Cylinder_001']),
     ignore=True,
     )
 scene_parent.Cylinder_001 = Entity(
@@ -382,7 +382,7 @@ scene_parent.Cylinder_001 = Entity(
     position=Vec3(0.67137, 36.74357, 105.41782),
     rotation=(22.7, -147.77398, -5.21393),
     scale=Vec3(1.0, 5.11813, 1.0),
-    model=deepcopy(meshes['Cylinder']),
+    model=copy(meshes['Cylinder']),
     color=(0.23955, 0.11983, 0.03665, 1.0),
     ignore=True,
     )
@@ -392,7 +392,7 @@ scene_parent.eye = Entity(
     position=Vec3(62.22511, 36.24979, 98.33479),
     rotation=(-0.0, 59.99999, -0.0),
     scale=Vec3(1.6296, 1.6296, 0.3211),
-    model=deepcopy(meshes['Icosphere']),
+    model=copy(meshes['Icosphere']),
     color=(0.12477, 0.40198, 0.43966, 1.0),
     ignore=True,
     )
@@ -402,7 +402,7 @@ scene_parent.eye_trigger = Entity(
     position=Vec3(62.01433, 36.27136, 98.14872),
     rotation=(-0.0, 60.0, -0.0),
     scale=Vec3(0.68321, 0.68321, 0.68321),
-    model=deepcopy(meshes['Torus']),
+    model=copy(meshes['Torus']),
     color=(0.7991, 0.12744, 0.016, 1.0),
     ignore=True,
     )
@@ -412,7 +412,7 @@ scene_parent.gate = Entity(
     position=Vec3(64.94753, 29.36989, 99.89381),
     rotation=(-0.0, 59.99999, -0.0),
     scale=Vec3(1.0, 1.0, 1.0),
-    model=deepcopy(meshes['Cube_003']),
+    model=copy(meshes['Cube_003']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -422,7 +422,7 @@ scene_parent.gate_001 = Entity(
     position=Vec3(71.44753, 29.36989, 88.63548),
     rotation=(-0.0, 59.99999, -0.0),
     scale=Vec3(1.0, 1.0, 1.0),
-    model=deepcopy(meshes['Cube_009']),
+    model=copy(meshes['Cube_009']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -432,7 +432,7 @@ scene_parent.gate_pattern = Entity(
     position=Vec3(62.47002, 36.03463, 98.53617),
     rotation=(-0.0, 59.99999, -0.0),
     scale=Vec3(1.0, 1.0, 1.0),
-    model=deepcopy(meshes['Cube_004']),
+    model=copy(meshes['Cube_004']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -442,7 +442,7 @@ scene_parent.gate_pattern_001 = Entity(
     position=Vec3(62.53401, 36.03463, 98.4253),
     rotation=(-0.0, 59.99999, -0.0),
     scale=Vec3(1.0, 1.0, 1.0),
-    model=deepcopy(meshes['Cube_006']),
+    model=copy(meshes['Cube_006']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -452,7 +452,7 @@ scene_parent.goat = Entity(
     position=Vec3(104.31788, 42.09238, 112.21809),
     rotation=(-0.16754, 58.72733, -3.0492),
     scale=Vec3(1.58046, 0.75655, 0.96961),
-    model=deepcopy(meshes['Cube_010']),
+    model=copy(meshes['Cube_010']),
     color=(0.52772, 0.52772, 0.52772, 1.0),
     ignore=True,
     )
@@ -462,7 +462,7 @@ scene_parent.mesh_collider = Entity(
     position=Vec3(-41.64867, -0.96273, 271.89127),
     rotation=(-0.0, 90.0, -0.0),
     scale=Vec3(400.0, 400.0, 400.0),
-    model=deepcopy(meshes['terrain_mesh']),
+    model=copy(meshes['terrain_mesh']),
     ignore=True,
     )
 scene_parent.pebble = Entity(
@@ -471,7 +471,7 @@ scene_parent.pebble = Entity(
     position=Vec3(53.95644, 68.5498, 46.45643),
     rotation=(-14.27711, -61.36241, 174.43951),
     scale=Vec3(0.89478, 0.89478, 0.89478),
-    model=deepcopy(meshes['pebble']),
+    model=copy(meshes['pebble']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -481,7 +481,7 @@ scene_parent.pebble_001 = Entity(
     position=Vec3(30.09428, 68.5498, 58.58311),
     rotation=(-18.94477, -126.34409, 96.18029),
     scale=Vec3(0.35631, 0.35631, 0.35631),
-    model=deepcopy(meshes['pebble']),
+    model=copy(meshes['pebble']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -491,7 +491,7 @@ scene_parent.pebble_002 = Entity(
     position=Vec3(32.44136, 68.5498, 56.236),
     rotation=(-110.17425, -7.94218, 50.40365),
     scale=Vec3(0.61816, 0.61816, 0.61816),
-    model=deepcopy(meshes['pebble']),
+    model=copy(meshes['pebble']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -501,7 +501,7 @@ scene_parent.pebble_003 = Entity(
     position=Vec3(31.52861, 68.5498, 42.93577),
     rotation=(-58.68959, -29.46967, 61.13407),
     scale=Vec3(0.74631, 0.74631, 0.74631),
-    model=deepcopy(meshes['pebble']),
+    model=copy(meshes['pebble']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -511,7 +511,7 @@ scene_parent.pebble_004 = Entity(
     position=Vec3(66.34392, 68.5498, 58.58311),
     rotation=(-97.61402, -80.93495, -22.29787),
     scale=Vec3(0.76942, 0.76942, 0.76942),
-    model=deepcopy(meshes['pebble']),
+    model=copy(meshes['pebble']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -521,7 +521,7 @@ scene_parent.pebble_005 = Entity(
     position=Vec3(60.21538, 68.5498, 61.97337),
     rotation=(-10.14306, -149.295, 28.41627),
     scale=Vec3(0.64217, 0.64217, 0.64217),
-    model=deepcopy(meshes['pebble']),
+    model=copy(meshes['pebble']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -531,7 +531,7 @@ scene_parent.pebble_006 = Entity(
     position=Vec3(60.99776, 68.5498, 58.97428),
     rotation=(106.18863, 87.17209, 68.06005),
     scale=Vec3(0.79027, 0.79027, 0.79027),
-    model=deepcopy(meshes['pebble']),
+    model=copy(meshes['pebble']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -541,7 +541,7 @@ scene_parent.pebble_007 = Entity(
     position=Vec3(64.77919, 68.5498, 62.36454),
     rotation=(97.02083, 80.94329, -34.8841),
     scale=Vec3(0.45905, 0.45905, 0.45905),
-    model=deepcopy(meshes['pebble']),
+    model=copy(meshes['pebble']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -551,7 +551,7 @@ scene_parent.Plane = Entity(
     position=Vec3(-246.43648, 34.61961, 71.78492),
     rotation=(-0.0, 90.0, -0.0),
     scale=Vec3(16.86507, 16.86507, 16.86507),
-    model=deepcopy(meshes['Plane_002']),
+    model=copy(meshes['Plane_002']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -561,7 +561,7 @@ scene_parent.plank = Entity(
     position=Vec3(-0.30623, 18.01764, 89.06232),
     rotation=(11.02684, 100.80247, 11.49506),
     scale=Vec3(7.27186, 0.35528, 0.35528),
-    model=deepcopy(meshes['Cube_019']),
+    model=copy(meshes['Cube_019']),
     color=(0.23955, 0.11983, 0.03665, 1.0),
     ignore=True,
     )
@@ -571,7 +571,7 @@ scene_parent.plank_001 = Entity(
     position=Vec3(3.9175, 18.91878, 93.39848),
     rotation=(10.8493, 73.47229, 5.43461),
     scale=Vec3(7.27186, 0.35528, 0.35528),
-    model=deepcopy(meshes['plank']),
+    model=copy(meshes['plank']),
     color=(0.23955, 0.11983, 0.03665, 1.0),
     ignore=True,
     )
@@ -581,7 +581,7 @@ scene_parent.plank_002 = Entity(
     position=Vec3(12.27684, 23.71113, 94.28986),
     rotation=(13.33912, 60.15794, -20.27198),
     scale=Vec3(7.27186, 0.35528, 0.35528),
-    model=deepcopy(meshes['plank']),
+    model=copy(meshes['plank']),
     color=(0.23955, 0.11983, 0.03665, 1.0),
     ignore=True,
     )
@@ -591,7 +591,7 @@ scene_parent.rock = Entity(
     position=Vec3(43.83797, 34.2638, 122.66413),
     rotation=(-180.00001, -90.0, -0.0),
     scale=Vec3(-8.47842, -8.39618, -10.56784),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -601,7 +601,7 @@ scene_parent.rock_001 = Entity(
     position=Vec3(82.26643, 38.36237, 79.68214),
     rotation=(38.85271, 66.42593, 148.32185),
     scale=Vec3(-7.98922, -7.91172, -9.95809),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -611,7 +611,7 @@ scene_parent.rock_002 = Entity(
     position=Vec3(92.09557, 44.99686, 80.14939),
     rotation=(-22.5263, 76.7547, 162.17231),
     scale=Vec3(-12.54713, -16.03239, -15.63925),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -621,7 +621,7 @@ scene_parent.rock_003 = Entity(
     position=Vec3(72.38268, 29.86269, 49.33396),
     rotation=(-22.52631, 76.7547, 162.17231),
     scale=Vec3(-5.15569, -5.10568, -6.42626),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -631,7 +631,7 @@ scene_parent.rock_004 = Entity(
     position=Vec3(72.05693, 33.55627, 70.82725),
     rotation=(-96.50765, -104.38403, -0.43975),
     scale=Vec3(-11.92263, -8.2188, -9.96631),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -641,7 +641,7 @@ scene_parent.rock_005 = Entity(
     position=Vec3(74.27989, 36.32869, 58.47565),
     rotation=(-72.73298, 85.31798, -3.28626),
     scale=Vec3(-11.92263, -8.2188, -9.96631),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -651,7 +651,7 @@ scene_parent.rock_006 = Entity(
     position=Vec3(83.21971, 38.73949, 65.71722),
     rotation=(-70.85518, -114.99668, -1.54975),
     scale=Vec3(-16.08923, -11.09102, -13.44924),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -661,7 +661,7 @@ scene_parent.rock_007 = Entity(
     position=Vec3(53.12814, 37.16491, 121.85641),
     rotation=(-97.142, -125.71552, 2.31885),
     scale=Vec3(-13.78557, -9.50301, -11.52358),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -671,7 +671,7 @@ scene_parent.rock_008 = Entity(
     position=Vec3(-16.65746, 33.15628, 144.11313),
     rotation=(-84.42854, 1.40045, -0.00703),
     scale=Vec3(-22.67092, -15.62807, -18.95098),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -681,7 +681,7 @@ scene_parent.rock_009 = Entity(
     position=Vec3(-96.69165, 23.33492, 59.11805),
     rotation=(167.79037, 49.83998, 17.59483),
     scale=Vec3(-14.79281, -23.13109, -17.51595),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -691,7 +691,7 @@ scene_parent.rock_010 = Entity(
     position=Vec3(-77.96248, 28.56547, 84.82157),
     rotation=(-86.6792, 51.93609, -0.59022),
     scale=Vec3(-18.73352, -12.91385, -15.65964),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -701,7 +701,7 @@ scene_parent.rock_011 = Entity(
     position=Vec3(-88.69447, 21.97801, 101.03257),
     rotation=(-82.4793, -119.13348, -4.73262),
     scale=Vec3(-18.73352, -12.91385, -15.65965),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -711,7 +711,7 @@ scene_parent.rock_012 = Entity(
     position=Vec3(-97.28807, 22.92607, 84.71151),
     rotation=(-61.20831, 41.65953, -3.48362),
     scale=Vec3(-25.28032, -17.42685, -21.13222),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -721,7 +721,7 @@ scene_parent.rock_013 = Entity(
     position=Vec3(-93.2108, 11.47502, -54.03551),
     rotation=(167.79037, 49.83998, 17.59483),
     scale=Vec3(-13.43061, -13.30032, -16.74045),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -731,7 +731,7 @@ scene_parent.rock_014 = Entity(
     position=Vec3(-98.51408, 6.48969, -64.09551),
     rotation=(-162.94527, -31.16174, -28.21602),
     scale=Vec3(-13.43061, -13.30032, -16.74045),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -741,7 +741,7 @@ scene_parent.rock_015 = Entity(
     position=Vec3(28.53941, 9.73389, 38.72294),
     rotation=(-70.85518, -114.99668, -1.54975),
     scale=Vec3(-5.26115, -3.62674, -4.39788),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -751,7 +751,7 @@ scene_parent.rock_016 = Entity(
     position=Vec3(-81.69075, 22.54106, 19.24743),
     rotation=(176.75021, 47.69829, 9.947),
     scale=Vec3(-14.79281, -23.13109, -17.51595),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -761,7 +761,7 @@ scene_parent.rock_017 = Entity(
     position=Vec3(-89.35707, 19.94444, 47.68217),
     rotation=(167.79037, 49.83998, 17.59483),
     scale=Vec3(-20.39116, -31.88508, -24.14488),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -771,7 +771,7 @@ scene_parent.rock_018 = Entity(
     position=Vec3(-93.97993, 13.92893, 25.53858),
     rotation=(167.79037, 49.83998, 17.59483),
     scale=Vec3(-14.79281, -23.13109, -17.51595),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -781,7 +781,7 @@ scene_parent.rock_019 = Entity(
     position=Vec3(-113.12938, 9.99149, 9.34992),
     rotation=(167.79037, 49.83998, 17.59483),
     scale=Vec3(-24.58617, -38.44469, -29.11213),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -791,7 +791,7 @@ scene_parent.rock_020 = Entity(
     position=Vec3(90.9561, 1.67914, 0.87276),
     rotation=(167.79037, 49.83998, 17.59483),
     scale=Vec3(-20.39116, -31.88508, -24.14488),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -801,7 +801,7 @@ scene_parent.rock_021 = Entity(
     position=Vec3(88.2802, 12.06969, 38.00072),
     rotation=(174.68576, -1.83059, 5.86882),
     scale=Vec3(-20.39116, -31.88508, -24.14488),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -811,7 +811,7 @@ scene_parent.rock_022 = Entity(
     position=Vec3(90.73143, 6.60101, 18.56942),
     rotation=(174.68576, -1.83059, 5.86882),
     scale=Vec3(-20.39116, -31.88508, -24.14488),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -821,7 +821,7 @@ scene_parent.rock_023 = Entity(
     position=Vec3(128.69527, -9.47698, -35.32624),
     rotation=(174.68576, -1.83059, 5.86882),
     scale=Vec3(-20.39116, -31.88508, -24.14488),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -831,7 +831,7 @@ scene_parent.rock_024 = Entity(
     position=Vec3(117.68306, 9.13348, -15.59266),
     rotation=(174.68576, -1.83059, 5.86882),
     scale=Vec3(-20.39116, -31.88508, -24.14488),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -841,7 +841,7 @@ scene_parent.rock_025 = Entity(
     position=Vec3(-106.61739, 7.39249, -25.67598),
     rotation=(177.67191, -11.69603, 9.11129),
     scale=Vec3(-22.10325, -34.56223, -26.17214),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -851,7 +851,7 @@ scene_parent.rock_026 = Entity(
     position=Vec3(-2.99498, 29.84366, 124.8307),
     rotation=(-85.59028, -8.39799, -6.01787),
     scale=Vec3(-6.98124, -6.55698, -9.39098),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -861,7 +861,7 @@ scene_parent.rock_027 = Entity(
     position=Vec3(21.57961, 36.58307, 134.36603),
     rotation=(-85.2175, 12.37515, -3.85399),
     scale=Vec3(-22.70696, -15.66602, -19.25194),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -871,7 +871,7 @@ scene_parent.rock_028 = Entity(
     position=Vec3(13.23167, 13.62289, 54.67744),
     rotation=(-2.49117, 11.12579, 79.48387),
     scale=Vec3(-9.575, -6.60047, -8.00389),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -881,7 +881,7 @@ scene_parent.rock_029 = Entity(
     position=Vec3(16.65157, 12.60068, 50.37486),
     rotation=(101.49516, 97.12963, 2.04222),
     scale=Vec3(-5.67057, -5.39592, -6.57339),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -891,7 +891,7 @@ scene_parent.rock_030 = Entity(
     position=Vec3(11.58586, 7.68041, 41.01603),
     rotation=(140.19659, 98.58801, -13.70901),
     scale=Vec3(-3.06761, -2.91903, -3.55601),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -901,7 +901,7 @@ scene_parent.rock_031 = Entity(
     position=Vec3(-24.69716, 8.18609, 55.09693),
     rotation=(-163.26228, 85.3599, -3.43487),
     scale=Vec3(-4.71713, -6.42681, -8.71538),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -911,7 +911,7 @@ scene_parent.rock_032 = Entity(
     position=Vec3(7.68224, 21.55011, 93.31687),
     rotation=(-70.56006, 107.12708, 38.92683),
     scale=Vec3(-2.31326, -3.15168, -4.27398),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -921,7 +921,7 @@ scene_parent.rock_033 = Entity(
     position=Vec3(17.2878, 21.63405, 89.68244),
     rotation=(-1.85224, 103.42594, 21.91447),
     scale=Vec3(-2.31339, -3.21637, -7.19842),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -931,7 +931,7 @@ scene_parent.rock_034 = Entity(
     position=Vec3(6.16542, 15.07665, 81.08158),
     rotation=(5.53983, 102.26623, 3.0575),
     scale=Vec3(-2.01771, -2.80527, -6.27837),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -941,7 +941,7 @@ scene_parent.rock_035 = Entity(
     position=Vec3(-17.80699, 23.57303, 106.76402),
     rotation=(69.39771, -39.3145, 150.35077),
     scale=Vec3(-2.98147, -6.07105, -5.68866),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -951,7 +951,7 @@ scene_parent.rock_036 = Entity(
     position=Vec3(-22.8051, 24.39031, 112.37132),
     rotation=(-78.13747, 110.11333, 43.36964),
     scale=Vec3(-5.30041, -5.62659, -10.81766),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -961,7 +961,7 @@ scene_parent.rock_037 = Entity(
     position=Vec3(-21.72212, 20.86696, 105.91334),
     rotation=(72.44801, -33.36997, -160.63472),
     scale=Vec3(-1.6786, -3.30457, -1.89252),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -971,7 +971,7 @@ scene_parent.rock_038 = Entity(
     position=Vec3(-30.71059, 19.15632, 97.7555),
     rotation=(72.44802, -33.36997, -160.63472),
     scale=Vec3(-1.48954, -2.16184, -1.88797),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -981,7 +981,7 @@ scene_parent.rock_039 = Entity(
     position=Vec3(4.21648, 16.25855, 83.93217),
     rotation=(72.44802, -33.36997, -160.63472),
     scale=Vec3(-1.48954, -2.16184, -1.88797),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -991,7 +991,7 @@ scene_parent.rock_040 = Entity(
     position=Vec3(74.10756, 36.18651, 77.71883),
     rotation=(-96.50765, -104.38403, -0.43975),
     scale=Vec3(-11.92263, -5.82934, -13.17599),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1001,7 +1001,7 @@ scene_parent.rock_041 = Entity(
     position=Vec3(46.23369, 24.85184, 109.06879),
     rotation=(-62.46878, -105.84522, 27.82716),
     scale=Vec3(-4.49082, -3.09572, -3.75395),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1011,7 +1011,7 @@ scene_parent.rock_042 = Entity(
     position=Vec3(60.65398, 24.95466, 76.83457),
     rotation=(30.29379, -115.80993, -19.08587),
     scale=Vec3(-4.49082, -3.09572, -3.75395),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1021,7 +1021,7 @@ scene_parent.rock_043 = Entity(
     position=Vec3(75.36778, 18.79797, 22.12315),
     rotation=(-1.17503, -121.6697, -1.60143),
     scale=Vec3(-7.15263, -9.97379, -6.35575),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1031,7 +1031,7 @@ scene_parent.rock_044 = Entity(
     position=Vec3(84.57487, 37.76593, 44.16889),
     rotation=(7.87539, -168.8265, 66.13025),
     scale=Vec3(-7.15263, -9.97379, -6.35575),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1041,7 +1041,7 @@ scene_parent.rock_045 = Entity(
     position=Vec3(84.29329, 10.33621, -14.36634),
     rotation=(7.87539, -168.8265, 66.13025),
     scale=Vec3(-7.15263, -9.97379, -6.35575),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1051,7 +1051,7 @@ scene_parent.rock_046 = Entity(
     position=Vec3(-90.37421, 18.97522, -7.06097),
     rotation=(7.87539, -168.8265, 66.13025),
     scale=Vec3(-9.60087, -10.71447, -6.36511),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1061,7 +1061,7 @@ scene_parent.rock_047 = Entity(
     position=Vec3(-72.06062, 21.35386, 46.39251),
     rotation=(7.87539, -168.8265, 66.13025),
     scale=Vec3(-9.72112, -12.64964, -13.7704),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1071,7 +1071,7 @@ scene_parent.rock_048 = Entity(
     position=Vec3(-49.84264, 5.55244, 18.3151),
     rotation=(7.87539, -168.8265, 66.13025),
     scale=Vec3(-3.88767, -5.05884, -5.50706),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1081,7 +1081,7 @@ scene_parent.rock_049 = Entity(
     position=Vec3(-85.99477, 13.94338, -24.67678),
     rotation=(-37.19345, -88.56865, 16.80376),
     scale=Vec3(-8.07627, -6.80373, -7.18603),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1091,7 +1091,7 @@ scene_parent.rock_050 = Entity(
     position=Vec3(-74.42924, 7.32379, -50.00637),
     rotation=(-37.19345, -88.56865, 16.80376),
     scale=Vec3(-8.07627, -6.80373, -7.18603),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1101,7 +1101,7 @@ scene_parent.rock_051 = Entity(
     position=Vec3(-79.31828, 8.50428, 10.15961),
     rotation=(-9.39343, -24.38575, -4.48092),
     scale=Vec3(-10.12169, -8.52686, -9.00598),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1111,7 +1111,7 @@ scene_parent.rock_052 = Entity(
     position=Vec3(-87.58345, 20.2054, 3.5062),
     rotation=(5.33482, -30.13956, 23.76758),
     scale=Vec3(-10.18068, -14.40241, -9.2315),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1121,7 +1121,7 @@ scene_parent.rock_053 = Entity(
     position=Vec3(-75.54524, 26.0042, 67.47736),
     rotation=(117.53842, -5.90356, 103.39624),
     scale=Vec3(-10.17826, -7.60652, -8.68307),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1131,7 +1131,7 @@ scene_parent.rock_054 = Entity(
     position=Vec3(-72.19093, 37.42344, 49.42884),
     rotation=(-101.3839, -106.17701, -18.23556),
     scale=Vec3(-10.17826, -7.60652, -8.68307),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1141,7 +1141,7 @@ scene_parent.rock_055 = Entity(
     position=Vec3(-38.14711, -1.56338, -51.06066),
     rotation=(-101.3839, -106.17701, -18.23556),
     scale=Vec3(-10.17826, -7.60652, -8.68307),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1151,7 +1151,7 @@ scene_parent.rock_056 = Entity(
     position=Vec3(-95.55287, 1.0535, -85.0823),
     rotation=(-166.56546, 46.17751, -23.05115),
     scale=Vec3(-16.81539, -16.65227, -20.95938),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1161,7 +1161,7 @@ scene_parent.rock_057 = Entity(
     position=Vec3(-123.79733, -2.83458, -135.63864),
     rotation=(6.48076, -53.05321, -156.52828),
     scale=Vec3(-11.77297, -11.65876, -14.6743),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1171,7 +1171,7 @@ scene_parent.rock_058 = Entity(
     position=Vec3(-110.39935, -1.23612, -133.12247),
     rotation=(-41.75675, 107.52188, 32.871),
     scale=Vec3(-7.677, -7.60253, -9.56892),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1181,7 +1181,7 @@ scene_parent.rock_059 = Entity(
     position=Vec3(-85.0486, -2.75282, -180.04654),
     rotation=(83.69446, 121.96718, 29.50671),
     scale=Vec3(-10.98175, -5.87545, -13.59953),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1191,7 +1191,7 @@ scene_parent.rock_060 = Entity(
     position=Vec3(120.50713, -2.50905, -66.97071),
     rotation=(7.26474, 51.8118, -153.44539),
     scale=Vec3(-11.77297, -11.65876, -14.6743),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1201,7 +1201,7 @@ scene_parent.rock_061 = Entity(
     position=Vec3(119.64027, -1.34207, -80.61912),
     rotation=(-42.17602, -147.72684, 29.72769),
     scale=Vec3(-7.677, -7.60253, -9.56892),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1211,7 +1211,7 @@ scene_parent.rock_062 = Entity(
     position=Vec3(112.66902, 0.67515, -45.87714),
     rotation=(10.21814, -30.46202, -155.79032),
     scale=Vec3(-16.81539, -16.65227, -20.95938),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1221,7 +1221,7 @@ scene_parent.rock_063 = Entity(
     position=Vec3(122.89122, 0.49269, -48.78156),
     rotation=(-22.93459, -6.7316, 141.8311),
     scale=Vec3(-18.72573, -18.54408, -23.3405),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1231,7 +1231,7 @@ scene_parent.rock_064 = Entity(
     position=Vec3(73.21635, 15.57585, 7.87423),
     rotation=(163.99004, 76.4925, 8.87856),
     scale=Vec3(-5.04018, -7.02813, -4.47864),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1241,7 +1241,7 @@ scene_parent.rock_065 = Entity(
     position=Vec3(134.8264, 51.43233, 124.53043),
     rotation=(-22.5263, 76.7547, 162.17231),
     scale=Vec3(-12.54713, -16.03239, -15.63925),
-    model=deepcopy(meshes['rock_005']),
+    model=copy(meshes['rock_005']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1251,7 +1251,7 @@ scene_parent.rock_066 = Entity(
     position=Vec3(121.07805, 46.92503, 91.04673),
     rotation=(75.8127, 158.40745, 3.07025),
     scale=Vec3(-14.1517, -11.3742, -18.41439),
-    model=deepcopy(meshes['rock_006']),
+    model=copy(meshes['rock_006']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1261,7 +1261,7 @@ scene_parent.rock_067 = Entity(
     position=Vec3(110.58659, 45.28291, 80.75016),
     rotation=(79.57423, 85.96127, 22.56303),
     scale=Vec3(-14.17298, -12.9649, -20.30457),
-    model=deepcopy(meshes['rock_007']),
+    model=copy(meshes['rock_007']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1271,7 +1271,7 @@ scene_parent.rock_068 = Entity(
     position=Vec3(123.93791, 50.46501, 117.82459),
     rotation=(-1.17503, -121.6697, -1.60143),
     scale=Vec3(-7.15343, -11.30564, -6.35613),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1281,7 +1281,7 @@ scene_parent.rock_069 = Entity(
     position=Vec3(121.78645, 46.81214, 103.57566),
     rotation=(163.99004, 76.4925, 8.87856),
     scale=Vec3(-5.05727, -7.8805, -4.52583),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1291,7 +1291,7 @@ scene_parent.rock_070 = Entity(
     position=Vec3(79.90251, 50.41331, 149.83206),
     rotation=(173.77936, 84.31895, 10.52557),
     scale=Vec3(-14.79281, -23.13109, -17.51595),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1301,7 +1301,7 @@ scene_parent.rock_071 = Entity(
     position=Vec3(57.23122, 47.94122, 133.70288),
     rotation=(12.4037, -136.8387, 63.84448),
     scale=Vec3(-8.89213, -9.92354, -5.89524),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1311,7 +1311,7 @@ scene_parent.rock_072 = Entity(
     position=Vec3(75.74284, 36.53187, 141.15732),
     rotation=(-9.72873, 11.68931, -1.51954),
     scale=Vec3(-10.12169, -8.52686, -9.00598),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1321,7 +1321,7 @@ scene_parent.rock_073 = Entity(
     position=Vec3(65.76457, 48.76347, 140.59293),
     rotation=(5.29369, 5.97061, 26.7476),
     scale=Vec3(-10.18068, -14.40241, -9.2315),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1331,7 +1331,7 @@ scene_parent.rock_074 = Entity(
     position=Vec3(53.32527, 44.41292, 134.20303),
     rotation=(-67.45986, -66.67175, 63.57173),
     scale=Vec3(-10.34691, -8.26418, -11.64716),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1341,7 +1341,7 @@ scene_parent.rock_075 = Entity(
     position=Vec3(118.04146, 52.73559, 137.00446),
     rotation=(-67.45986, -66.67176, 63.57173),
     scale=Vec3(-23.49858, -8.85127, -12.31059),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1351,7 +1351,7 @@ scene_parent.rock_076 = Entity(
     position=Vec3(111.55708, 53.81713, 145.12408),
     rotation=(6.11158, -70.89585, 75.09709),
     scale=Vec3(-25.0263, -13.52398, -12.31059),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1361,7 +1361,7 @@ scene_parent.rock_077 = Entity(
     position=Vec3(97.34676, 50.9441, 146.29425),
     rotation=(-19.41487, -69.84327, 82.78725),
     scale=Vec3(-12.43001, -10.57996, -10.67871),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1371,7 +1371,7 @@ scene_parent.rock_078 = Entity(
     position=Vec3(-62.37664, 28.70296, 131.89294),
     rotation=(0.0, -40.0, -180.00001),
     scale=Vec3(-42.44799, -17.42685, -21.13222),
-    model=deepcopy(meshes['rock']),
+    model=copy(meshes['rock']),
     color=(0.42002, 0.26269, 0.17158, 1.0),
     ignore=True,
     )
@@ -1381,7 +1381,7 @@ scene_parent.ship = Entity(
     position=Vec3(-1.99312, 32.78981, 109.675),
     rotation=(22.70072, -147.77398, -5.21393),
     scale=Vec3(11.09686, 11.87779, 9.94161),
-    model=deepcopy(meshes['ship']),
+    model=copy(meshes['ship']),
     color=(0.23955, 0.11983, 0.03665, 1.0),
     ignore=True,
     )
@@ -1391,7 +1391,7 @@ scene_parent.start_point = Entity(
     position=Vec3(5.74055, 10.59998, -2.0211),
     rotation=(-0.0, 90.0, -0.0),
     scale=Vec3(0.83722, 1.67443, 0.83722),
-    model=deepcopy(meshes['Cube_001']),
+    model=copy(meshes['Cube_001']),
     ignore=True,
     )
 scene_parent.terrain = Entity(
@@ -1400,7 +1400,7 @@ scene_parent.terrain = Entity(
     position=Vec3(-41.64867, -0.96273, 271.89127),
     rotation=(-0.0, 90.0, -0.0),
     scale=Vec3(400.0, 400.0, 400.0),
-    model=deepcopy(meshes['terrain']),
+    model=copy(meshes['terrain']),
     ignore=True,
     )
 scene_parent.tree = Entity(
@@ -1409,7 +1409,7 @@ scene_parent.tree = Entity(
     position=Vec3(-30.33443, 11.36286, 69.11839),
     rotation=(-0.0, 90.0, -0.0),
     scale=Vec3(1.0, 1.0, 1.0),
-    model=deepcopy(meshes['palm_tree']),
+    model=copy(meshes['palm_tree']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -1419,7 +1419,7 @@ scene_parent.tree_001 = Entity(
     position=Vec3(-49.40157, 11.13074, 61.92559),
     rotation=(-0.0, 47.38717, 1.94923),
     scale=Vec3(0.76401, 0.76401, 0.76401),
-    model=deepcopy(meshes['palm_tree']),
+    model=copy(meshes['palm_tree']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -1429,7 +1429,7 @@ scene_parent.tree_002 = Entity(
     position=Vec3(-39.83549, 8.52919, 51.87572),
     rotation=(-0.0, 23.76579, 3.03915),
     scale=Vec3(0.81892, 0.81892, 0.81892),
-    model=deepcopy(meshes['palm_tree']),
+    model=copy(meshes['palm_tree']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -1439,7 +1439,7 @@ scene_parent.tree_003 = Entity(
     position=Vec3(-46.03349, 5.05565, -2.54681),
     rotation=(-0.0, 176.22275, 2.78366),
     scale=Vec3(0.90139, 0.90139, 0.90139),
-    model=deepcopy(meshes['palm_tree']),
+    model=copy(meshes['palm_tree']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -1449,7 +1449,7 @@ scene_parent.tree_004 = Entity(
     position=Vec3(-37.1963, 4.4127, -11.46468),
     rotation=(-0.0, 92.31196, -3.80129),
     scale=Vec3(0.91689, 0.91689, 0.91689),
-    model=deepcopy(meshes['palm_tree']),
+    model=copy(meshes['palm_tree']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -1459,7 +1459,7 @@ scene_parent.tree_005 = Entity(
     position=Vec3(-61.65273, 5.40668, -17.79873),
     rotation=(-0.0, -19.14459, 3.56266),
     scale=Vec3(0.81293, 0.81293, 0.81293),
-    model=deepcopy(meshes['palm_tree']),
+    model=copy(meshes['palm_tree']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -1469,7 +1469,7 @@ scene_parent.tree_006 = Entity(
     position=Vec3(-25.93578, 4.15203, 7.00959),
     rotation=(-0.0, 72.92127, 1.574),
     scale=Vec3(0.90373, 0.90373, 0.90373),
-    model=deepcopy(meshes['palm_tree']),
+    model=copy(meshes['palm_tree']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -1479,7 +1479,7 @@ scene_parent.tree_007 = Entity(
     position=Vec3(53.87312, 22.13633, 67.39414),
     rotation=(-0.0, 62.76563, -0.87705),
     scale=Vec3(0.77387, 0.77387, 0.77387),
-    model=deepcopy(meshes['palm_tree']),
+    model=copy(meshes['palm_tree']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -1489,7 +1489,7 @@ scene_parent.tree_008 = Entity(
     position=Vec3(17.76909, 8.20807, 41.0023),
     rotation=(-0.0, -45.63732, 1.96294),
     scale=Vec3(0.93071, 0.93071, 0.93071),
-    model=deepcopy(meshes['palm_tree']),
+    model=copy(meshes['palm_tree']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -1499,7 +1499,7 @@ scene_parent.tree_009 = Entity(
     position=Vec3(2.98967, 7.35863, 49.86997),
     rotation=(-0.0, -22.18632, -1.70967),
     scale=Vec3(0.9124, 0.9124, 0.9124),
-    model=deepcopy(meshes['palm_tree']),
+    model=copy(meshes['palm_tree']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -1509,7 +1509,7 @@ scene_parent.tree_010 = Entity(
     position=Vec3(36.16362, 21.74158, 104.56959),
     rotation=(-0.0, -60.09881, 3.78148),
     scale=Vec3(0.89849, 0.89849, 0.89849),
-    model=deepcopy(meshes['palm_tree']),
+    model=copy(meshes['palm_tree']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -1519,7 +1519,7 @@ scene_parent.tree_011 = Entity(
     position=Vec3(-25.37584, 18.60037, 103.72514),
     rotation=(5.16558, 129.97026, 21.35674),
     scale=Vec3(0.75657, 0.75657, 0.75656),
-    model=deepcopy(meshes['palm_tree']),
+    model=copy(meshes['palm_tree']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -1529,7 +1529,7 @@ scene_parent.tree_012 = Entity(
     position=Vec3(16.29115, 13.6223, 67.39414),
     rotation=(-0.0, 63.40823, -3.46532),
     scale=Vec3(0.9274, 0.9274, 0.9274),
-    model=deepcopy(meshes['palm_tree']),
+    model=copy(meshes['palm_tree']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -1539,7 +1539,7 @@ scene_parent.tree_013 = Entity(
     position=Vec3(6.07991, 7.05919, 34.51218),
     rotation=(-1.05769, 24.37503, 14.90658),
     scale=Vec3(0.93071, 0.93071, 0.93071),
-    model=deepcopy(meshes['palm_tree']),
+    model=copy(meshes['palm_tree']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -1549,7 +1549,7 @@ scene_parent.tree_014 = Entity(
     position=Vec3(103.11835, 38.86805, 129.92365),
     rotation=(11.36089, 88.20368, 22.84924),
     scale=Vec3(0.77387, 0.77387, 0.77387),
-    model=deepcopy(meshes['palm_tree']),
+    model=copy(meshes['palm_tree']),
     color=(0.8, 0.8, 0.8, 1.0),
     ignore=True,
     )
@@ -1559,7 +1559,7 @@ scene_parent.water = Entity(
     position=Vec3(-41.64867, 1.60455, 271.89127),
     rotation=(-0.0, 90.0, -0.0),
     scale=Vec3(16000.0, 16000.0, 16000.0),
-    model=deepcopy(meshes['Plane_001']),
+    model=copy(meshes['Plane_001']),
     color=(0.04109, 0.37432, 0.8, 0.50714),
     ignore=True,
     )
@@ -1569,7 +1569,7 @@ scene_parent.win_text = Entity(
     position=Vec3(98.69991, 42.28569, 122.06842),
     rotation=(-85.85955, 63.83842, -0.83357),
     scale=Vec3(1.0, 1.0, 1.0),
-    model=deepcopy(meshes['Text']),
+    model=copy(meshes['Text']),
     color=(0.7991, 0.12744, 0.016, 1.0),
     ignore=True,
     )
