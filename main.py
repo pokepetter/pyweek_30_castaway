@@ -99,8 +99,6 @@ def input(key):
             # print('hit something', mouse.hovered_entity)
             player.arrow.world_parent = scene
             player.arrow.animate('position', Vec3(*mouse.world_point), mouse.collision.distance/500, curve=curve.linear, interrupt='kill')
-            # player.arrow.world_parent = scene
-            # player.arrow.animate('z', mouse.collision.distance, mouse.collision.distance/500, curve=curve.linear, interrupt='finish')
 
             if mouse.hovered_entity == level.eye_trigger:
                 invoke(open_gate, delay=.3)
@@ -110,7 +108,6 @@ def input(key):
             destroy(player.arrow, delay=10)
 
         else:
-            # player.draw_arrow_animation.kill()
             player.arrow.world_parent = scene
             player.arrow.animate('position', player.arrow.world_position+(player.arrow.forward*100), .5, curve=curve.linear, interrupt='kill')
             # player.arrow.animate('z', 100, .5, curve=curve.linear, interrupt='finish')
@@ -145,46 +142,18 @@ def update():
         level.chest_lid.color = orginal_chest_color
 
 
-
 def open_gate():
     destroy(level.eye)
     destroy(level.eye_trigger)
     level.gate.animate_position(level.gate.position+(level.gate.left)*10, duration=5, curve=curve.linear)
     level.gate_001.animate_position(level.gate_001.position+(level.gate_001.right)*10, duration=5, curve=curve.linear)
 
-# # Enable shadows; we need to set a frustum for that.
-# from ursina.lights import DirectionalLight
-# sun._light.get_lens().set_near_far(1, 30)
-# # sun.get_lens().set_film_size(20, 40)
-#
-# def debug_input(key):
-#     if key == 'space':
-#         set_shadow_area()
-# e = Entity(input=debug_input, sun=None)
 
-# def set_shadow_area():
-#     if not e.sun:
-#         e.sun = DirectionalLight(y=10, rotation=(90+40,90,0))
-#     e.sun._light.show_frustum()
-#     e.sun._light.set_shadow_caster(True, 4096, 4096)
-#     e.sun._light.show_frustum()
-#     # sun._light.set_shadow_caster(True, 4096, 4096)
-#     bmin, bmax = scene.get_tight_bounds(level)
-#     lens = e.sun._light.get_lens()
-#     lens.set_near_far(0, 100)
-#     # lens.set_film_offset((bmin.xy + bmax.xy) * .5)
-#     lens.set_film_size(50)
-#     print('updated shadow area')
-# EditorCamera()
 if application.development_mode:
     from ursina.scripts.noclip_mode import NoclipMode
     player.add_script(NoclipMode(speed=32))
 
-# level.bow.model.save('bow.bam')
-# level.arrow.model.save('arrow.bam')
-# camera.clip_plane_near = 1
 camera.clip_plane_far = 500
 Sky(texture='castaway_sky', scale=camera.clip_plane_far-1)
-# camera.shader = ssao_shader
 
 app.run()
