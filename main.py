@@ -9,10 +9,7 @@ window.show_ursina_splash = True
 app = Ursina()
 #
 # Entity.default_shader = colored_lights_shader
-level = load_blender_scene(path = application.asset_folder,
-    name='castaway_island',
-    # reload=True
-    )
+level = load_blender_scene(name='castaway_island')
 # print('reload_total:', time.time() - t)
 t = time.time()
 level.mesh_collider.collider = 'mesh'
@@ -75,8 +72,8 @@ def open_chest():
         level.chest_lid.animate('rotation_x', level.chest_lid.rotation_x + 120, duration=.2)
         invoke(setattr, level.bow, 'enabled', True, delay=.25)
         # make sure we can only open it once
-        level.chest.on_click = None
-        level.chest_lid.on_click = None
+        level.chest.on_click = Func(print, 'already opened')
+        level.chest_lid.on_click = Func(print, 'already opened')
 
 level.chest.on_click = open_chest
 level.chest_lid.on_click = open_chest
@@ -114,21 +111,22 @@ def input(key):
             destroy(player.arrow, delay=1)
 
     # cheat buttons
-    if key == 'f1':
-        level.bow.enabled = True
+    if application.development_mode:
+        if key == 'f1':
+            level.bow.enabled = True
 
-    if key == 'f2':
-        open_gate()
+        if key == 'f2':
+            open_gate()
 
-    if key == 'f3':
-        if not camera.shader:
-            camera.shader = ssao_shader
-        else:
-            camera.shader = None
+        if key == 'f3':
+            if not camera.shader:
+                camera.shader = ssao_shader
+            else:
+                camera.shader = None
 
 
-    if held_keys['control'] and key == 'r':
-        player.position = level.start_point.position
+        if held_keys['control'] and key == 'r':
+            player.position = level.start_point.position
 
 
 
