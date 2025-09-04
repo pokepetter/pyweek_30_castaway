@@ -15,10 +15,10 @@ t = time.time()
 level.mesh_collider.collider = 'mesh'
 level.mesh_collider.visible = False
 
-level.water.color = color.color(160,1,.8,.5)
+level.water.color = color.Color(160,1,.8,.5)
 level.water.enabled = False
-Entity(model='plane', position=level.water.position, scale=9999, color=color.color(160,1,.8,.5), double_sided=True)
-scene.fog_color = color.color(6, .1, .85)
+Entity(model='plane', position=level.water.position, scale=9999, color=color.Color(160,1,.8,.5), double_sided=True)
+scene.fog_color = color.Color(6, .1, .85, 1)
 
 
 level.chest.collider = 'box'
