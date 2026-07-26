@@ -1,0 +1,9 @@
+[project]
+name = "pyweek-30-castaway"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ursina>=7.0.0",
+]
